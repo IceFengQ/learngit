@@ -1,5 +1,5 @@
 # 部署grafana&prometheus监控docker容器
-###部署环境
+### 部署环境
 主机：10.8.8.14 系统：centos7  docker版本：Docker version 17.12.1-ce 
 
 组件：**promtheus**(监控数据整合存储查询)+ **node-exporter**(监控节点)+ **cadvisor**(监控容器)+ **grafana**（展示）
@@ -12,7 +12,7 @@
 **grafana**丰富的图形化展示，支持多种后台监控服务平台接入。
 
 
-###一、部署容器命令启动
+### 一、部署容器命令启动
 1，启动cadvisor插件，并挂在docker数据目录。
 
 ```
@@ -106,7 +106,7 @@ docker run  -d -p 8000:3000  \
  grafana/grafana
 ```
 
-###二、检测状态
+### 二、检测状态
 访问10.8.8.14:8008进入prometheus服务界面，选择status--targets查看状态。
 
 
